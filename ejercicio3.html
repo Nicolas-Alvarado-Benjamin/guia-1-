@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function anade() {
+          var elemento = document.createElement("li");
+          var texto = document.createTextNode("NUEVO ELEMENTO");
+          elemento.appendChild(texto);
+        
+          var lista = document.getElementById("lista");
+          lista.appendChild(elemento);
+        }
+        </script>
+</head>
+<body>
+    <ul id="lista">
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetuer adipiscing elit</li>
+        <li>Sed mattis enim vitae orci</li>
+        <li>Phasellus libero</li>
+        <li>Maecenas nisl arcu</li>
+    </ul>
+    <input type="button" value="Añadir elemento" onclick="anade();" data-cf-modified-d8548e489e0e51d2a0064d66-="">
+</body>
+</html>
